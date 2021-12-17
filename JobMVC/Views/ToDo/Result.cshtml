@@ -1,0 +1,12 @@
+﻿@model ToDo
+
+<div style="border: solid 2px black">
+    <p>ToDo ID: @Model.Id</p>
+    <p>ToDo Name: @Model.ToDoName</p>
+    <p>ToDo Description: @Model.ToDoDescription</p>
+    <p>Hours Needed: @Model.HoursNeeded</p>
+    <p>Assigned To: @Model.AssignedTo</p>
+    <p>Is It Completed?: @Model.IsCompleted</p>
+    <a asp-action="Assign" asp-controller="ToDo" asp-route-id="@Model.Id"><p>Assign to Employee</p></a>
+    <br />
+</div>

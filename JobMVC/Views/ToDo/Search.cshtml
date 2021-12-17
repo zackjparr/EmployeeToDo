@@ -1,0 +1,10 @@
+﻿@model ToDo
+
+<p>Search by ToDo ID:</p>
+
+<form asp-controller="ToDo" asp-action="Result">
+    <p>
+        <input type="number" name="Id" />
+        <input type="submit" value="Search" />
+    </p>
+</form>

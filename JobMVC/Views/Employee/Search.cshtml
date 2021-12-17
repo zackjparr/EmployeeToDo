@@ -1,0 +1,10 @@
+﻿@model Employee
+
+<p>Search by Employee ID:</p>
+
+<form asp-controller="Employee" asp-action="Result">
+    <p>
+        <input type="number" name="Id" />
+        <input type="submit" value="Search" />
+    </p>
+</form>

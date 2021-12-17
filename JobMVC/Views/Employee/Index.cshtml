@@ -1,0 +1,12 @@
+﻿@model IEnumerable<Employee>
+
+<h2>Employee List</h2>
+
+
+@foreach (Employee e in Model)
+            {
+    <div style="border: 3px groove black">
+        <p>Name: @e.FullName</p>
+        <p>Title: @e.Title</p>
+        </div>
+        }

@@ -1,0 +1,14 @@
+﻿@model IEnumerable<ToDo>
+
+<h2>To Do List</h2>
+
+
+@foreach (ToDo t in Model)
+{
+    <div style="border: 3px groove black">
+        <p>Name: @t.ToDoName</p>
+        <p>Description: @t.ToDoDescription</p>
+        <p>Assigned To: @t.AssignedTo</p>
+        <p>Is Completed?: @t.IsCompleted</p>
+    </div>
+}
